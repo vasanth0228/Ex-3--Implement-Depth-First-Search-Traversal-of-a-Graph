@@ -1,4 +1,4 @@
-# Ex-3--Implement-Depth-First-Search-Traversal-of-a-Graph
+# Ex-3-Implement-Depth-First-Search-Traversal-of-a-Graph
 
 **Name:**
 
