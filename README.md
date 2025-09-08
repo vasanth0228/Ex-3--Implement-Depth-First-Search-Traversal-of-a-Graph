@@ -16,11 +16,17 @@ A graph can have more than one DFS traversal. Depth-first search is an algorithm
 The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. 
 
 ### Algorithm:
+
 Step 1: Construct a Graph with Nodes and Edges
+
 Step 2: Depth First Search Uses Stack and Recursion
+
 Step 3:Insert a START node to the STACK
+
 Step 4:Find its Successors Or neighbors and Check whether the node is visited or not
+
 Step 5:If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.
+
 
 ### Program:
 ```
