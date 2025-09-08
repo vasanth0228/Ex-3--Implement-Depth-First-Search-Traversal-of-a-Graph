@@ -1,5 +1,5 @@
 # Ex-3--Implement-Depth-First-Search-Traversal-of-a-Graph
-# Implement-Depth-First-Search-Traversal-of-a-Graph
+
 **Name:**
 
 **Register Number:**
