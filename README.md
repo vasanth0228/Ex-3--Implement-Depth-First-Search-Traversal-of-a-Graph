@@ -1,8 +1,8 @@
 # Ex-3-Implement-Depth-First-Search-Traversal-of-a-Graph
 
-**Name:**
+Name:Vasanth kuamr V
 
-**Register Number:**
+Register Number:2305002027
 
 ### Aim:
 To Implement Depth First Search Traversal of a Graph using Python 3.
@@ -31,6 +31,7 @@ Step 5:If Not Visited, add it to the STACK. Else Call The Function Again Until N
 ### Program:
 ```
 from collections import defaultdict
+
 def dfs(graph, start, visited, path):
     path.append(start)
     visited[start] = True
@@ -40,18 +41,20 @@ def dfs(graph, start, visited, path):
     return path
 
 graph = defaultdict(list)
-n, e = map(int, input("Enter number of nodes and edges (n e): ").split())
-print("Enter edges (u v):")
-for i in range(e):
-    u, v = input().split()
+edges = input("Enter all edges (u v pairs, space-separated): ").split()
+
+for i in range(0, len(edges), 2):
+    u, v = edges[i], edges[i + 1]
     graph[u].append(v)
     graph[v].append(u)
+
 print("Graph:", dict(graph))
+
 start = 'A'
 visited = defaultdict(bool)
 path = []
-traversed_path = dfs(graph, start, visited, path)
-print("DFS Traversal Path:", traversed_path)
+print("DFS Traversal Path:", dfs(graph, start, visited, path))
+
 ```
 
 ### Sample Input:
@@ -64,8 +67,9 @@ D E
 
 ### Sample Output:
 
+Enter all edges (u v pairs, space-separated): A B A C B D B E C E D E
 Graph: {'A': ['B', 'C'], 'B': ['A', 'D', 'E'], 'C': ['A', 'E'], 'D': ['B', 'E'], 'E': ['B', 'C', 'D']}
-
 DFS Traversal Path: ['A', 'B', 'D', 'E', 'C']
 
 **Result:**
+Thus the Implementation Depth First Search Traversal of a Graph using Python is successfully verified.
